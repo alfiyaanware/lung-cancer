@@ -15,15 +15,26 @@
 <body>
     {% include 'nav.html' %}
     <br>
-    <h1 style="text-align:center">Lung Cancer Detection</h1><br>
-  <p>Click on the "Choose File" button to upload a file:</p>
+    <h1 style="text-align:center">Lung Cancer Detection</h1><br><br>
+  <img src="static/images/lung-scan.jpg" width="350" height="250"  style="float:right; margin-right:100px; margin-top:10px;" >
+  <p style="margin-left:70px;">Please click on the "Choose File" button to upload a Lung Scan:</p>
 
 <form action="">
-  <input type="file" id="myFile" name="filename">
+  <input type="file" id="scan" name="scan">
   <br>
-  <input type="submit">
+  <br>
+  <input class="btn btn-info btn-outline-dark" type="submit">
 </form>
-        <br>
+  
+        <pre>
+
+
+
+
+
+
+          
+        </pre>
   
     {% include 'footer.html' %}
 </body>

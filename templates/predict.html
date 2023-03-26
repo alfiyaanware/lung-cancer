@@ -18,8 +18,8 @@
     <br>
     <br> <h5 style="margin-left:70px;">Please enter your details below to generate result: </h5><br>
     <form action="/results" >
-        Full name:
-        <input type="text" name="name" id="name">
+        Name:
+        <input type="text" name="name" id="Name" size=18>
         <br><br>
         Age:
         <input type="number" name="age" id="age">
@@ -85,8 +85,32 @@
           <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="weightloss" step="1">
           {% include 'slider.html' %}
 
-        <br> Fatigue: <br>
-          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="fatigue" step="1">
+        <br> Shortness of Breath: <br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="breath" step="1">
+          {% include 'slider.html' %}
+
+        <br> Wheezing: <br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="wheezing" step="1">
+          {% include 'slider.html' %}
+      
+        <br> Swallowing Difficulty: <br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="swallow" step="1">
+          {% include 'slider.html' %}
+
+        <br> Clubbing of Finger Nails: <br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="nails" step="1">
+          {% include 'slider.html' %}
+
+        <br> How frequent is your Cold? <br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="cold" step="1">
+          {% include 'slider.html' %}
+      
+        <br> Dry Cough:<br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="cough" step="1">
+          {% include 'slider.html' %}
+
+        <br> Snoring: <br>
+          <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="cold" step="1">
           {% include 'slider.html' %}
       
         <br> Enter BMI: <input type="text" name="BMI" id="bmi"><br><br>
