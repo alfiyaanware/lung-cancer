@@ -19,94 +19,46 @@
     <form action="/results" >
         Full name:
         <input type="text" name="name" id="name">
+        <br><br>
+        Age:
+        <input type="number" name="age" id="age">
         <br>
-        
+      
+        <br><br>
+      <input type="radio" name="gender" id="female">Female
+        <input type="radio" name="gender" id="male">Male
+      
         <br><br>
         <input type="radio" name="smoke" id="smoke">Smoker
-        <input type="radio" name="nonsmoke" id="nonsmoke">Non-Smoker
+        <input type="radio" name="smoke" id="nonsmoke">Non-Smoker
+        
         <br><br>
 
-        On a scale of 1-10:<br>
+        <u>On a scale of 1-10:</u><br>
 
         <br> How bad is the air pollution in your area: <br>
         <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="pollution" step="1">
-        <datalist id="tickmarks">
-        <option value="0" label="0"></option>
-        <option value="1"></option>
-        <option value="2"></option>
-        <option value="3"></option>
-        <option value="4"></option>
-        <option value="5" label="5"></option>
-        <option value="6"></option>
-        <option value="7"></option>
-        <option value="8"></option>
-        <option value="9"></option>
-        <option value="10" label="10"></option>
-        </datalist>
+        {% include 'slider.html' %}
 
         <br> How much alcohol do you consume: <br>
         <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="alcohol" step="1">
-        <datalist id="tickmarks">
-            <option value="0" label="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5" label="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10" label="10"></option>
-        </datalist>
-
+        {% include 'slider.html' %}
+      
         <br> Level of dust allergy: <br>
         <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="dust" step="1">
-        <datalist id="tickmarks">
-            <option value="0" label="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5" label="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10" label="10"></option>
-        </datalist>
+        {% include 'slider.html' %}
 
         <br> Would you say you have a balanced diet: <br>
         <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="diet" step="1">
-        <datalist id="tickmarks">
-            <option value="0" label="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5" label="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10" label="10"></option>
-        </datalist>
+        {% include 'slider.html' %}
 
         <br>Severity of chest pain: <br>
         <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="chestpain" step="1">
-        <datalist id="tickmarks">
-            <option value="0" label="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5" label="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10" label="10"></option>
-        </datalist>
+        {% include 'slider.html' %}
+
+        <br> Occupational Risks: <br>
+        <input type="range" list="tickmarks" min="0" max="10" value="0" class="slider" id="occupation" step="1">
+        {% include 'slider.html' %}
 
         <br> Enter BMI: <input type="text" name="BMI" id="bmi"><br><br>
         <a href="https://www.calculator.net/bmi-calculator.html?ctype=metric&cage=22&csex=f&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=150&ckg=44&printit=0&x=32&Y=11" target="_blank">You can calculate your BMI here!</a>
@@ -117,6 +69,7 @@
     </form>
   <br><br>
     <script src="formvalues.js"></script>
+  
   {% include 'footer.html' %}
 </body>
 </html>

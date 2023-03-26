@@ -8,11 +8,6 @@ def renders():
   return render_template('home.html')
 
 
-@app.route("/home")
-def home():
-  return render_template('home.html')
-
-
 @app.route('/about')
 def about():
   return render_template("about.html")
@@ -28,9 +23,14 @@ def predict():
   return render_template('predict.html')
 
 
-@app.route("/bookappt")
-def bookappt():
-  return render_template('bookappt.html')
+@app.route("/detect")
+def detect():
+  return render_template('detect.html')
+
+
+# @app.route("/bookappt")
+# def bookappt():
+#   return render_template('bookappt.html')
 
 
 @app.route("/kinds")
